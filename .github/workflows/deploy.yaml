@@ -22,6 +22,7 @@ jobs:
           docker build ./nginx -t mhorvat85/multi-nginx:latest
           docker build ./server -t mhorvat85/multi-server:latest
           docker build ./worker -t mhorvat85/multi-worker:latest
+
       - name: publish
         run: |
           docker push mhorvat85/multi-client:latest
